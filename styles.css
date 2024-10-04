@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover; /* Ensures video covers the entire background while maintaining aspect ratio */
+    overflow: hidden;
+    
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    z-index: 1;
+   
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    z-index: 1;
+}
+
+.solar-system {
+    display: flex;
+    gap: 20px;
+}
+
+.planet {
+    cursor: pointer;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    text-align: center;
+    font-size: 20px;
+}
+
+.planet:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
